@@ -2,9 +2,9 @@ name: SonarCloud analysis
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3   # ⬅️ OBLIGATOIRE !!
+      - uses: actions/checkout@v3
 
       - name: Analyze with SonarCloud
         uses: SonarSource/sonarcloud-github-action@v2
